@@ -9,21 +9,64 @@
 /* Begin PBXBuildFile section */
 		1592CF942CD6359000A0212E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1592CF932CD6359000A0212E /* AppDelegate.swift */; };
 		1592CF962CD6359000A0212E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1592CF952CD6359000A0212E /* SceneDelegate.swift */; };
-		1592CF982CD6359000A0212E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1592CF972CD6359000A0212E /* ViewController.swift */; };
 		1592CF9B2CD6359000A0212E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1592CF992CD6359000A0212E /* Main.storyboard */; };
 		1592CF9D2CD6359200A0212E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1592CF9C2CD6359200A0212E /* Assets.xcassets */; };
 		1592CFA02CD6359200A0212E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1592CF9E2CD6359200A0212E /* LaunchScreen.storyboard */; };
+		1592CFAE2CD6374500A0212E /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1592CFAD2CD6374500A0212E /* AuthViewController.swift */; };
+		1592CFB12CD638AC00A0212E /* MainCofeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1592CFB02CD638AC00A0212E /* MainCofeViewController.swift */; };
+		1592CFB42CD638E600A0212E /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1592CFB32CD638E600A0212E /* Extensions.swift */; };
+		1592CFB72CD63E7F00A0212E /* StaticClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1592CFB62CD63E7F00A0212E /* StaticClass.swift */; };
+		1592CFB92CD65ED000A0212E /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1592CFB82CD65ED000A0212E /* AuthView.swift */; };
+		1592CFBC2CD65F4A00A0212E /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 1592CFBB2CD65F4A00A0212E /* SnapKit */; };
+		1592CFBE2CD6741E00A0212E /* AuthDataFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1592CFBD2CD6741E00A0212E /* AuthDataFlow.swift */; };
+		1592CFC12CD674B000A0212E /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 1592CFC02CD674B000A0212E /* Alamofire */; };
+		1592CFC32CD676F500A0212E /* ModelAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1592CFC22CD676F500A0212E /* ModelAuth.swift */; };
+		1592CFC52CD686B600A0212E /* CoffeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1592CFC42CD686B600A0212E /* CoffeView.swift */; };
+		1592CFC72CD6883D00A0212E /* CafeDataFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1592CFC62CD6883D00A0212E /* CafeDataFlow.swift */; };
+		1592CFC92CD688D700A0212E /* CafeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1592CFC82CD688D700A0212E /* CafeModel.swift */; };
+		1592CFCB2CD693C700A0212E /* CafeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1592CFCA2CD693C700A0212E /* CafeCollectionViewCell.swift */; };
+		1592CFCD2CD6985700A0212E /* LocationFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1592CFCC2CD6985700A0212E /* LocationFlow.swift */; };
+		1592CFCF2CD6A38C00A0212E /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1592CFCE2CD6A38C00A0212E /* MapViewController.swift */; };
+		1592CFD22CD6A3AD00A0212E /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1592CFD12CD6A3AD00A0212E /* MapView.swift */; };
+		15D0BF8F2CD6BB680011227E /* YandexMapsMobile in Frameworks */ = {isa = PBXBuildFile; productRef = 15D0BF8E2CD6BB680011227E /* YandexMapsMobile */; };
+		15D0BF922CD6C4210011227E /* DetailCafeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D0BF912CD6C4210011227E /* DetailCafeViewController.swift */; };
+		15D0BF942CD6C5FA0011227E /* DetailCafeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D0BF932CD6C5FA0011227E /* DetailCafeView.swift */; };
+		15D0BF962CD6C7F70011227E /* DataFlowDetailCafe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D0BF952CD6C7F70011227E /* DataFlowDetailCafe.swift */; };
+		15D0BF982CD6C8100011227E /* ModelDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D0BF972CD6C8100011227E /* ModelDetail.swift */; };
+		15D0BF9A2CD6CB4E0011227E /* MenuCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D0BF992CD6CB4E0011227E /* MenuCollectionViewCell.swift */; };
+		15D0BF9C2CD6DB430011227E /* FinishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D0BF9B2CD6DB430011227E /* FinishViewController.swift */; };
+		15D0BF9F2CD6DC000011227E /* FinishView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D0BF9E2CD6DC000011227E /* FinishView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1592CF902CD6359000A0212E /* Seven_Winds_Studio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Seven_Winds_Studio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1592CF932CD6359000A0212E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1592CF952CD6359000A0212E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1592CF972CD6359000A0212E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1592CF9A2CD6359000A0212E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1592CF9C2CD6359200A0212E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1592CF9F2CD6359200A0212E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1592CFA12CD6359200A0212E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1592CFAD2CD6374500A0212E /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
+		1592CFB02CD638AC00A0212E /* MainCofeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCofeViewController.swift; sourceTree = "<group>"; };
+		1592CFB32CD638E600A0212E /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		1592CFB62CD63E7F00A0212E /* StaticClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticClass.swift; sourceTree = "<group>"; };
+		1592CFB82CD65ED000A0212E /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
+		1592CFBD2CD6741E00A0212E /* AuthDataFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthDataFlow.swift; sourceTree = "<group>"; };
+		1592CFC22CD676F500A0212E /* ModelAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelAuth.swift; sourceTree = "<group>"; };
+		1592CFC42CD686B600A0212E /* CoffeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeView.swift; sourceTree = "<group>"; };
+		1592CFC62CD6883D00A0212E /* CafeDataFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeDataFlow.swift; sourceTree = "<group>"; };
+		1592CFC82CD688D700A0212E /* CafeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeModel.swift; sourceTree = "<group>"; };
+		1592CFCA2CD693C700A0212E /* CafeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeCollectionViewCell.swift; sourceTree = "<group>"; };
+		1592CFCC2CD6985700A0212E /* LocationFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationFlow.swift; sourceTree = "<group>"; };
+		1592CFCE2CD6A38C00A0212E /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		1592CFD12CD6A3AD00A0212E /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		15D0BF912CD6C4210011227E /* DetailCafeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCafeViewController.swift; sourceTree = "<group>"; };
+		15D0BF932CD6C5FA0011227E /* DetailCafeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCafeView.swift; sourceTree = "<group>"; };
+		15D0BF952CD6C7F70011227E /* DataFlowDetailCafe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataFlowDetailCafe.swift; sourceTree = "<group>"; };
+		15D0BF972CD6C8100011227E /* ModelDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelDetail.swift; sourceTree = "<group>"; };
+		15D0BF992CD6CB4E0011227E /* MenuCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCollectionViewCell.swift; sourceTree = "<group>"; };
+		15D0BF9B2CD6DB430011227E /* FinishViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishViewController.swift; sourceTree = "<group>"; };
+		15D0BF9E2CD6DC000011227E /* FinishView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +74,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15D0BF8F2CD6BB680011227E /* YandexMapsMobile in Frameworks */,
+				1592CFBC2CD65F4A00A0212E /* SnapKit in Frameworks */,
+				1592CFC12CD674B000A0212E /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +102,99 @@
 		1592CF922CD6359000A0212E /* Seven_Winds_Studio */ = {
 			isa = PBXGroup;
 			children = (
-				1592CF932CD6359000A0212E /* AppDelegate.swift */,
-				1592CF952CD6359000A0212E /* SceneDelegate.swift */,
-				1592CF972CD6359000A0212E /* ViewController.swift */,
-				1592CF992CD6359000A0212E /* Main.storyboard */,
-				1592CF9C2CD6359200A0212E /* Assets.xcassets */,
-				1592CF9E2CD6359200A0212E /* LaunchScreen.storyboard */,
+				1592CFB52CD63E4D00A0212E /* Views */,
+				1592CFB22CD638D000A0212E /* EXT */,
+				1592CFAF2CD6389600A0212E /* Cofe */,
+				1592CFA82CD635D700A0212E /* Auth&Login */,
+				1592CFA72CD635C300A0212E /* Support */,
 				1592CFA12CD6359200A0212E /* Info.plist */,
 			);
 			path = Seven_Winds_Studio;
+			sourceTree = "<group>";
+		};
+		1592CFA72CD635C300A0212E /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				1592CF952CD6359000A0212E /* SceneDelegate.swift */,
+				1592CF9E2CD6359200A0212E /* LaunchScreen.storyboard */,
+				1592CF932CD6359000A0212E /* AppDelegate.swift */,
+				1592CF9C2CD6359200A0212E /* Assets.xcassets */,
+				1592CF992CD6359000A0212E /* Main.storyboard */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		1592CFA82CD635D700A0212E /* Auth&Login */ = {
+			isa = PBXGroup;
+			children = (
+				1592CFAD2CD6374500A0212E /* AuthViewController.swift */,
+				1592CFB82CD65ED000A0212E /* AuthView.swift */,
+				1592CFBD2CD6741E00A0212E /* AuthDataFlow.swift */,
+				1592CFC22CD676F500A0212E /* ModelAuth.swift */,
+			);
+			path = "Auth&Login";
+			sourceTree = "<group>";
+		};
+		1592CFAF2CD6389600A0212E /* Cofe */ = {
+			isa = PBXGroup;
+			children = (
+				15D0BF9D2CD6DBCE0011227E /* Finish */,
+				15D0BF902CD6C30E0011227E /* DetailCafe */,
+				1592CFD02CD6A39200A0212E /* Map */,
+				1592CFB02CD638AC00A0212E /* MainCofeViewController.swift */,
+				1592CFC42CD686B600A0212E /* CoffeView.swift */,
+				1592CFC62CD6883D00A0212E /* CafeDataFlow.swift */,
+				1592CFC82CD688D700A0212E /* CafeModel.swift */,
+				1592CFCA2CD693C700A0212E /* CafeCollectionViewCell.swift */,
+				1592CFCC2CD6985700A0212E /* LocationFlow.swift */,
+			);
+			path = Cofe;
+			sourceTree = "<group>";
+		};
+		1592CFB22CD638D000A0212E /* EXT */ = {
+			isa = PBXGroup;
+			children = (
+				1592CFB32CD638E600A0212E /* Extensions.swift */,
+			);
+			path = EXT;
+			sourceTree = "<group>";
+		};
+		1592CFB52CD63E4D00A0212E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1592CFB62CD63E7F00A0212E /* StaticClass.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1592CFD02CD6A39200A0212E /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				1592CFCE2CD6A38C00A0212E /* MapViewController.swift */,
+				1592CFD12CD6A3AD00A0212E /* MapView.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		15D0BF902CD6C30E0011227E /* DetailCafe */ = {
+			isa = PBXGroup;
+			children = (
+				15D0BF912CD6C4210011227E /* DetailCafeViewController.swift */,
+				15D0BF932CD6C5FA0011227E /* DetailCafeView.swift */,
+				15D0BF952CD6C7F70011227E /* DataFlowDetailCafe.swift */,
+				15D0BF972CD6C8100011227E /* ModelDetail.swift */,
+				15D0BF992CD6CB4E0011227E /* MenuCollectionViewCell.swift */,
+			);
+			path = DetailCafe;
+			sourceTree = "<group>";
+		};
+		15D0BF9D2CD6DBCE0011227E /* Finish */ = {
+			isa = PBXGroup;
+			children = (
+				15D0BF9B2CD6DB430011227E /* FinishViewController.swift */,
+				15D0BF9E2CD6DC000011227E /* FinishView.swift */,
+			);
+			path = Finish;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +213,11 @@
 			dependencies = (
 			);
 			name = Seven_Winds_Studio;
+			packageProductDependencies = (
+				1592CFBB2CD65F4A00A0212E /* SnapKit */,
+				1592CFC02CD674B000A0212E /* Alamofire */,
+				15D0BF8E2CD6BB680011227E /* YandexMapsMobile */,
+			);
 			productName = Seven_Winds_Studio;
 			productReference = 1592CF902CD6359000A0212E /* Seven_Winds_Studio.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +246,11 @@
 				Base,
 			);
 			mainGroup = 1592CF872CD6359000A0212E;
+			packageReferences = (
+				1592CFBA2CD65F4A00A0212E /* XCRemoteSwiftPackageReference "SnapKit" */,
+				1592CFBF2CD674B000A0212E /* XCRemoteSwiftPackageReference "Alamofire" */,
+				15D0BF8D2CD6BB680011227E /* XCRemoteSwiftPackageReference "YandexMapsMobileLite" */,
+			);
 			productRefGroup = 1592CF912CD6359000A0212E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,9 +278,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1592CF982CD6359000A0212E /* ViewController.swift in Sources */,
+				1592CFB92CD65ED000A0212E /* AuthView.swift in Sources */,
+				15D0BF922CD6C4210011227E /* DetailCafeViewController.swift in Sources */,
+				1592CFD22CD6A3AD00A0212E /* MapView.swift in Sources */,
+				1592CFBE2CD6741E00A0212E /* AuthDataFlow.swift in Sources */,
+				15D0BF982CD6C8100011227E /* ModelDetail.swift in Sources */,
+				15D0BF942CD6C5FA0011227E /* DetailCafeView.swift in Sources */,
+				15D0BF9F2CD6DC000011227E /* FinishView.swift in Sources */,
+				1592CFB42CD638E600A0212E /* Extensions.swift in Sources */,
+				1592CFB12CD638AC00A0212E /* MainCofeViewController.swift in Sources */,
+				15D0BF9A2CD6CB4E0011227E /* MenuCollectionViewCell.swift in Sources */,
+				1592CFCB2CD693C700A0212E /* CafeCollectionViewCell.swift in Sources */,
+				15D0BF962CD6C7F70011227E /* DataFlowDetailCafe.swift in Sources */,
+				1592CFC32CD676F500A0212E /* ModelAuth.swift in Sources */,
 				1592CF942CD6359000A0212E /* AppDelegate.swift in Sources */,
+				1592CFC52CD686B600A0212E /* CoffeView.swift in Sources */,
+				1592CFC72CD6883D00A0212E /* CafeDataFlow.swift in Sources */,
+				1592CFB72CD63E7F00A0212E /* StaticClass.swift in Sources */,
+				1592CFCD2CD6985700A0212E /* LocationFlow.swift in Sources */,
 				1592CF962CD6359000A0212E /* SceneDelegate.swift in Sources */,
+				1592CFC92CD688D700A0212E /* CafeModel.swift in Sources */,
+				1592CFCF2CD6A38C00A0212E /* MapViewController.swift in Sources */,
+				1592CFAE2CD6374500A0212E /* AuthViewController.swift in Sources */,
+				15D0BF9C2CD6DB430011227E /* FinishViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,9 +454,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Seven_Winds_Studio/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = TestApp;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -304,8 +464,16 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					DeviceCheck,
+					"-ObjC",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "k.Seven-Winds-Studio";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -321,9 +489,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Seven_Winds_Studio/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = TestApp;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -331,8 +499,16 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					DeviceCheck,
+					"-ObjC",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "k.Seven-Winds-Studio";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -361,6 +537,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1592CFBA2CD65F4A00A0212E /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+		1592CFBF2CD674B000A0212E /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.10.1;
+			};
+		};
+		15D0BF8D2CD6BB680011227E /* XCRemoteSwiftPackageReference "YandexMapsMobileLite" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/c-villain/YandexMapsMobileLite";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.8.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1592CFBB2CD65F4A00A0212E /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1592CFBA2CD65F4A00A0212E /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		1592CFC02CD674B000A0212E /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1592CFBF2CD674B000A0212E /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		15D0BF8E2CD6BB680011227E /* YandexMapsMobile */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 15D0BF8D2CD6BB680011227E /* XCRemoteSwiftPackageReference "YandexMapsMobileLite" */;
+			productName = YandexMapsMobile;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1592CF882CD6359000A0212E /* Project object */;
 }
