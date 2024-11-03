@@ -17,7 +17,7 @@ class AuthViewController: UIViewController {
     private lazy var mainView = AuthView()
     private lazy var authDataFlow = AuthDataFlow()
     private var isReg = true
-    
+    private let locationFlow = LocationFlow()
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
