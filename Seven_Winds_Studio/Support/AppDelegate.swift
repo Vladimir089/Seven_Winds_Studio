@@ -15,7 +15,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-
         YMKMapKit.setApiKey("dd885cc9-37f2-4578-b86c-4579c0ec4864")
               YMKMapKit.setLocale("ru_RU")
               YMKMapKit.sharedInstance()

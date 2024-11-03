@@ -6,16 +6,18 @@
 //
 
 import UIKit
-import Combine
+
+protocol AuthViewControllerDelegate: AnyObject {
+    func checkText()
+}
+
 
 class AuthViewController: UIViewController {
     
-    private lazy var mainView = AuthView(publisher: publisher)
+    private lazy var mainView = AuthView()
     private lazy var authDataFlow = AuthDataFlow()
     private var isReg = true
     
-    private let publisher = PassthroughSubject<Any, Never>()
-    private lazy var cancellable = [AnyCancellable]()
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -27,19 +29,12 @@ class AuthViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view = mainView
-        mainView.frame = self.view.bounds
+        mainView.delegate = self
         addGestureInView()
-        subscribe()
         addTargetInButton()
     }
 
-    private func subscribe() {
-        publisher
-            .sink { _ in
-                self.checkTexts()
-            }
-            .store(in: &cancellable)
-    }
+   
     
     private func addGestureInView() {
         let hideKBgesture = UITapGestureRecognizer(target: self, action: #selector(hideKB))
@@ -67,26 +62,36 @@ class AuthViewController: UIViewController {
     
     private func checkTexts() {
         let arrTexts = mainView.returnTexts()
-        if arrTexts.contains(where: {$0 == ""}) {
+        if arrTexts.contains(where: { $0.isEmpty }) {
             mainView.onAndOffAuthButton(isOn: false)
-        } else {
-            if isReg == true {
-                if arrTexts[1] == arrTexts[2] {
-                    mainView.onAndOffAuthButton(isOn: true)
-                } else {
-                    mainView.onAndOffAuthButton(isOn: false)
-                }
-            }
+            return
         }
         
-        if !isReg {
-            if arrTexts[0] != "" && arrTexts[1] != "" {
+        if isReg {
+            if arrTexts[1] == arrTexts[2], isPasswordValid(arrTexts[1]) {
+                mainView.onAndOffAuthButton(isOn: true)
+            } else {
+                mainView.onAndOffAuthButton(isOn: false)
+            }
+        } else {
+            if !arrTexts[0].isEmpty && isPasswordValid(arrTexts[1]) {
                 mainView.onAndOffAuthButton(isOn: true)
             } else {
                 mainView.onAndOffAuthButton(isOn: false)
             }
         }
-  
+    }
+    
+    private func isPasswordValid(_ password: String) -> Bool {
+        let minLength = 6
+        let uppercaseLetter = NSPredicate(format: "SELF MATCHES %@", ".*[A-Z]+.*")
+        let lowercaseLetter = NSPredicate(format: "SELF MATCHES %@", ".*[a-z]+.*")
+        let digit = NSPredicate(format: "SELF MATCHES %@", ".*[0-9]+.*")
+        
+        return password.count >= minLength &&
+               uppercaseLetter.evaluate(with: password) &&
+               lowercaseLetter.evaluate(with: password) &&
+               digit.evaluate(with: password)
     }
     
     private func addTargetInButton() {
@@ -129,4 +134,13 @@ class AuthViewController: UIViewController {
     }
     
     
+}
+
+
+extension AuthViewController: AuthViewControllerDelegate {
+
+    func checkText() {
+        self.checkTexts()
+    }
+
 }

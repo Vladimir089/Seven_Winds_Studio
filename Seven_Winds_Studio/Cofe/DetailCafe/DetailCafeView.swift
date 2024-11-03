@@ -24,7 +24,7 @@ class DetailCafeView: UIView {
         collection.delegate = self
         collection.dataSource = self
         layout.minimumInteritemSpacing = 10
-        layout.minimumLineSpacing = 10
+        layout.minimumLineSpacing = 20
         return collection
     }()
     
@@ -87,6 +87,11 @@ class DetailCafeView: UIView {
     func updateCollection(newMenu: [Menu], updateItem: Int) {
         self.arrMenu = newMenu
         collection.reloadItems(at: [IndexPath(row: updateItem, section: 0)])
+    }
+    
+    func updateAllCells(arr: [Menu]) {
+        self.arrMenu = arr
+        collection.reloadData()
     }
     
     func showNextButton(isShow: Bool) {

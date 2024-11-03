@@ -11,6 +11,7 @@ protocol DetailCafeViewControllerDelegate: AnyObject {
     func minusTapped(idCofe: Int)
     func plusTapped(idCofe: Int)
     func goFinish()
+    func getArr(arr: [Menu])
 }
 
 class DetailCafeViewController: UIViewController {
@@ -74,6 +75,10 @@ class DetailCafeViewController: UIViewController {
             mainView.showNextButton(isShow: false)
         }
     }
+    
+    private func reloadAllCollection() {
+        mainView.updateAllCells(arr: arrMenu)
+    }
 
 }
 
@@ -94,4 +99,17 @@ extension DetailCafeViewController: DetailCafeViewControllerDelegate {
         let vc = FinishViewController(delegate: self, arrMenu: arrMenu)
         self.navigationController?.pushViewController(vc, animated: true)
     }
+    
+    func getArr(arr: [Menu]) {
+        self.arrMenu = arr
+        reloadAllCollection()
+        
+        if arr.contains(where: {$0.count != 0 }) {
+            mainView.showNextButton(isShow: true)
+        } else {
+            mainView.showNextButton(isShow: false)
+        }
+    }
+    
+    
 }

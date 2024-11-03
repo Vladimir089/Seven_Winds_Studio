@@ -7,11 +7,10 @@
 
 import UIKit
 import SnapKit
-import Combine
+
 
 class AuthView: UIView {
     
-    let publisher: PassthroughSubject<Any, Never>
     var isReg = true
     
     //MARK: -Email
@@ -37,9 +36,10 @@ class AuthView: UIView {
         return stackView
     }()
     
+    
+    weak var delegate: AuthViewControllerDelegate?
 
-    init(publisher: PassthroughSubject<Any, Never>) {
-        self.publisher = publisher
+    init() {
         super.init(frame: .zero)
         setupUI()
     }
@@ -161,16 +161,16 @@ class AuthView: UIView {
 
 extension AuthView: UITextFieldDelegate {
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-        self.publisher.send(1)
+        delegate?.checkText()
         return true
     }
     
     func textFieldShouldClear(_ textField: UITextField) -> Bool {
-        self.publisher.send(1)
+        delegate?.checkText()
         return true
     }
     
     func textFieldDidChangeSelection(_ textField: UITextField) {
-        self.publisher.send(1)
+        delegate?.checkText()
     }
 }

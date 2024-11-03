@@ -10,6 +10,7 @@ import UIKit
 class CoffeView: UIView {
     
     private lazy var cafeArr: [Cafe] = []
+    weak var delegate: MainCofeViewControllerDelegate?
     
     
     private lazy var collection: UICollectionView = {
@@ -100,6 +101,10 @@ extension CoffeView: UICollectionViewDelegate, UICollectionViewDataSource, UICol
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: collectionView.bounds.width, height: 68)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        delegate?.cellTapped(id: cafeArr[indexPath.row].id)
     }
     
 }

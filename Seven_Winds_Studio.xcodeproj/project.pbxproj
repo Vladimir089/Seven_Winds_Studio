@@ -36,6 +36,7 @@
 		15D0BF9A2CD6CB4E0011227E /* MenuCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D0BF992CD6CB4E0011227E /* MenuCollectionViewCell.swift */; };
 		15D0BF9C2CD6DB430011227E /* FinishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D0BF9B2CD6DB430011227E /* FinishViewController.swift */; };
 		15D0BF9F2CD6DC000011227E /* FinishView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D0BF9E2CD6DC000011227E /* FinishView.swift */; };
+		15D0BFA12CD809A50011227E /* FinishCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D0BFA02CD809A50011227E /* FinishCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -67,6 +68,7 @@
 		15D0BF992CD6CB4E0011227E /* MenuCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCollectionViewCell.swift; sourceTree = "<group>"; };
 		15D0BF9B2CD6DB430011227E /* FinishViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishViewController.swift; sourceTree = "<group>"; };
 		15D0BF9E2CD6DC000011227E /* FinishView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishView.swift; sourceTree = "<group>"; };
+		15D0BFA02CD809A50011227E /* FinishCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,6 +195,7 @@
 			children = (
 				15D0BF9B2CD6DB430011227E /* FinishViewController.swift */,
 				15D0BF9E2CD6DC000011227E /* FinishView.swift */,
+				15D0BFA02CD809A50011227E /* FinishCollectionViewCell.swift */,
 			);
 			path = Finish;
 			sourceTree = "<group>";
@@ -287,6 +290,7 @@
 				15D0BF9F2CD6DC000011227E /* FinishView.swift in Sources */,
 				1592CFB42CD638E600A0212E /* Extensions.swift in Sources */,
 				1592CFB12CD638AC00A0212E /* MainCofeViewController.swift in Sources */,
+				15D0BFA12CD809A50011227E /* FinishCollectionViewCell.swift in Sources */,
 				15D0BF9A2CD6CB4E0011227E /* MenuCollectionViewCell.swift in Sources */,
 				1592CFCB2CD693C700A0212E /* CafeCollectionViewCell.swift in Sources */,
 				15D0BF962CD6C7F70011227E /* DataFlowDetailCafe.swift in Sources */,

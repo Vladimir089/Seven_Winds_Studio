@@ -6,8 +6,12 @@
 //
 
 import UIKit
-import Combine
 import CoreLocation
+
+protocol MainCofeViewControllerDelegate: AnyObject {
+    func cellTapped(id: Int)
+    //func calculateDistances
+}
 
 class MainCofeViewController: UIViewController {
     
@@ -17,12 +21,12 @@ class MainCofeViewController: UIViewController {
     private let dataFlow = CafeDataFlow()
     private let locationFlow = LocationFlow()
     
-    private lazy var cancellable = [AnyCancellable]()
     private lazy var cafes: [Cafe] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view = mainView
+        mainView.delegate = self
         settingsNav()
         downloadData()
         addTarget()
@@ -47,13 +51,12 @@ class MainCofeViewController: UIViewController {
     }
     
     private func location(arr: [Cafe]) {
-        locationFlow.calculateDistances(for: arr)
-            .sink(receiveValue: { updatedCafes in
-                self.mainView.loadCollection(arr: updatedCafes)
-                self.cafes = updatedCafes
-            })
-            .store(in: &cancellable)
+        locationFlow.calculateDistances(for: arr) { updatedCafes in
+            self.mainView.loadCollection(arr: updatedCafes)
+            self.cafes = updatedCafes
+        }
     }
+
     
     private func addTarget() {
         let but = mainView.addTargetInButton()
@@ -65,5 +68,17 @@ class MainCofeViewController: UIViewController {
         let vc = MapViewController(cafes: cafes)
         self.navigationController?.pushViewController(vc, animated: true)
     }
+    
+    
+}
+
+
+extension MainCofeViewController: MainCofeViewControllerDelegate {
+    
+    func cellTapped(id: Int) {
+        let vc = DetailCafeViewController(id: id)
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
     
 }
